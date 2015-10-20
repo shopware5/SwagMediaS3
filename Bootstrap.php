@@ -42,14 +42,14 @@ class Shopware_Plugins_Frontend_SwagMediaS3_Bootstrap extends Shopware_Component
      */
     public function getInfo()
     {
-        return array(
-            'version' => $this->getVersion(),
-            'label' => $this->getLabel(),
-            'supplier' => 'shopware AG',
+        return [
+            'version'     => $this->getVersion(),
+            'label'       => $this->getLabel(),
+            'supplier'    => 'shopware AG',
             'description' => 'Amazon S3-Erweiterung für die Media Adapter',
-            'support' => 'Shopware Forum',
-            'link' => 'http://www.shopware.com'
-        );
+            'support'     => 'Shopware Forum',
+            'link'        => 'http://www.shopware.com',
+        ];
     }
 
     /**
