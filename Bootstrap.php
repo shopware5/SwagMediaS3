@@ -7,8 +7,6 @@
  *
  */
 
-require(__DIR__ . "/vendor/autoload.php");
-
 use League\Flysystem\AdapterInterface;
 use Aws\S3\S3Client;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
@@ -82,6 +80,8 @@ class Shopware_Plugins_Frontend_SwagMediaS3_Bootstrap extends Shopware_Component
      */
     public function createS3Adapter(Enlight_Event_EventArgs $args)
     {
+        require(__DIR__ . "/vendor/autoload.php");
+
         $defaultConfig = [
             'key' => '',
             'secret' => '',
