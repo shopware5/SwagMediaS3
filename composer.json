@@ -1,4 +1,9 @@
 {
+    "comment":"league/flysystem and guzzlehttp/guzzle are provided by shopware",
+    "replace": {
+        "league/flysystem": "~1.0",
+        "guzzlehttp/guzzle": "~5.1"
+    },
     "require": {
         "league/flysystem-aws-s3-v3": "^1.0"
     }
