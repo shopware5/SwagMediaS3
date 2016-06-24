@@ -41,6 +41,8 @@ Update your `config.php` in your root directory and fill in your own values
 | region | Yes | The S3 region, e.g. `eu-central-1` |
 | bucket | Yes | Your S3 bucket name |
 | prefix | No | An optional path prefix for your media files |
+| endpoint | No | Sets the S3 endpoint specifically (e.g. non-AWS S3) |
+| metaOptions | No | Allows setting options per file specific to [Flysystem S3 Adapter](https://github.com/thephpleague/flysystem-aws-s3-v3/blob/4dea5e457d046b43434824e68e64f45a8dc7eeda/src/AwsS3Adapter.php#L31) |
 
 ## License
 
