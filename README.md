@@ -4,6 +4,10 @@
 
 The Amazon S3 adapter allows you to manage your media files in shopware on an Amazon S3 account. In addition, you can use Amazon CloudFront for delivering your files.
 
+## Building a package
+
+Just run `composer archive --format=zip`.
+
 ## Install
 
 Download the plugin from the release page and enable it in shopware.
