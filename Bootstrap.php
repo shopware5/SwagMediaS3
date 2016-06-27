@@ -88,7 +88,9 @@ class Shopware_Plugins_Frontend_SwagMediaS3_Bootstrap extends Shopware_Component
             'region' => '',
             'version' => 'latest',
             'bucket' => '',
-            'prefix' => ''
+            'prefix' => '',
+            'endpoint' => null,
+            'metaOptions' => []
         ];
 
         $config = array_merge($defaultConfig, $args->get('config'));
@@ -99,9 +101,10 @@ class Shopware_Plugins_Frontend_SwagMediaS3_Bootstrap extends Shopware_Component
                 'secret' => $config['secret'],
             ],
             'region' => $config['region'],
+            'endpoint' => $config['endpoint'],
             'version' => $config['version']
         ]);
 
-        return new AwsS3Adapter($client, $config['bucket'], $config['prefix']);
+        return new AwsS3Adapter($client, $config['bucket'], $config['prefix'], $config['metaOptions']);
     }
 }
