@@ -1,8 +1,18 @@
 {
-    "comment":"league/flysystem and guzzlehttp/guzzle are provided by shopware",
+	"name":"shopwarelabs/swag-media-s3",
+	"version": "1.0.0",
+	"description": "Shopware media adapter to store media files on Amazon S3.",
+    "comment": "league/flysystem and guzzlehttp/guzzle are provided by shopware",
+    "keywords": ["shopware", "s3", "aws"],
     "replace": {
         "league/flysystem": "~1.0",
         "guzzlehttp/guzzle": "~5.1"
+    },
+    "config": {
+    	"optimize-autoloader": true
+	},
+    "archive": {
+    	"exclude": ["/shopwarelabs-swag-media-s3-*.*", "/.git", "/.gitignore", "!/vendor"]
     },
     "require": {
         "league/flysystem-aws-s3-v3": "^1.0"
