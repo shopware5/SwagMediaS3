@@ -6,7 +6,7 @@ The Amazon S3 adapter allows you to manage your media files in shopware on an Am
 
 ## Building a package
 
-Just run `composer archive --format=zip`.
+Just run `./build.sh`.
 
 ## Install
 
