@@ -6,7 +6,7 @@
     "keywords": ["shopware", "s3", "aws"],
     "replace": {
         "league/flysystem": "~1.0",
-        "guzzlehttp/guzzle": "~5.1"
+        "guzzlehttp/guzzle": "~5.3.1"
     },
     "config": {
     	"optimize-autoloader": true
