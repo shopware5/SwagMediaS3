@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+    <label lang="de">Media Adapter: S3</label>
+    <label lang="en">Media adapter: S3</label>
+
+    <version>1.0.1</version>
+    <copyright>(c) by shopware AG</copyright>
+    <license>proprietary</license>
+    <author>shopware AG</author>
+    <compatibility minVersion="5.2.0" />
+
+</plugin>
