@@ -39,7 +39,7 @@ Update your `config.php` in your root directory and fill in your own values
 | Name | Required | Description |
 |------|----------|-------------|
 | type | Yes | Adapter type. Do not change. |
-| mediaUrl | Yes | Either S3, CloudFront or custom domain endpoint |
+| mediaUrl | Yes | Either S3, CloudFront or custom domain endpoint (e.g. https://s3.eu-central-1.amazonaws.com/yourBucket) |
 | key | Yes | Your Access Key ID |
 | secret | Yes | Your Secret Access Key |
 | region | Yes | The S3 region, e.g. `eu-central-1` |
