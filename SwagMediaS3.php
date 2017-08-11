@@ -45,15 +45,20 @@ class SwagMediaS3 extends Plugin
 
         $config = array_merge($defaultConfig, $args->get('config'));
 
-        $client = S3Client::factory([
-            'credentials' => [
-                'key'    => $config['key'],
-                'secret' => $config['secret'],
-            ],
+        $clientConfig = [
             'region' => $config['region'],
             'endpoint' => $config['endpoint'],
-            'version' => $config['version']
-        ]);
+            'version' => $config['version'],
+        ];
+
+        if (!empty($config['key'])) {
+            $clientConfig['credentials'] = [
+                'key'    => $config['key'],
+                'secret' => $config['secret'],
+            ];
+        }
+
+        $client = new S3Client($clientConfig);
 
         return new AwsS3Adapter($client, $config['bucket'], $config['prefix'], $config['metaOptions']);
     }

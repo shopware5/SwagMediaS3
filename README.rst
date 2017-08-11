@@ -36,6 +36,11 @@ Update your ``config.php`` in your root directory and fill in your own values::
       ]
   ]
 
+Using IAM roles in EC2
+----------------------
+
+To make use of your configured IAM roles, omit the array keys `key` and `secret` or leave them empty. The plugin will retrieve the credentials from the EC2 metadata service automatically.
+
 
 Value explanation
 -----------------
@@ -48,17 +53,17 @@ mediaUrl (required)
 
     e.g.: ``https://your-bucket-name.s3-website.eu-central-1.amazonaws.com/``
 
-key (required)
-    Your Access Key ID
-
-secret (required)
-    Your Secret Access Key
-
 region (required)
     The S3 region, e.g. ``eu-central-1``
 
 bucket (required)
     Your S3 bucket name
+
+key
+    Your Access Key ID
+
+secret
+    Your Secret Access Key
 
 prefix
     An optional path prefix for your media files
