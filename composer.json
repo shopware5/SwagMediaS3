@@ -1,6 +1,6 @@
 {
     "name":"shopwarelabs/swag-media-s3",
-    "type": "shopware-frontend-plugin",
+    "type": "shopware-plugin",
     "description": "Shopware media adapter to store media files on Amazon S3.",
     "license": "MIT",
     "comment": "league/flysystem and guzzlehttp/guzzle are provided by shopware",
