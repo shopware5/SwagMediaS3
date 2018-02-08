@@ -5,10 +5,6 @@
     "license": "MIT",
     "comment": "league/flysystem and guzzlehttp/guzzle are provided by shopware",
     "keywords": ["shopware", "s3", "aws"],
-    "replace": {
-        "league/flysystem": "~1.0",
-        "guzzlehttp/guzzle": "~5.3.1"
-    },
     "extra": {
         "installer-name": "SwagMediaS3"
     },
