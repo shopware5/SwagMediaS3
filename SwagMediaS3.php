@@ -8,7 +8,6 @@
  */
 
 namespace SwagMediaS3;
-require __DIR__. '/vendor/autoload.php';
 
 use Shopware\Components\Plugin;
 use League\Flysystem\AdapterInterface;
