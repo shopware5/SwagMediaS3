@@ -9,6 +9,8 @@
 
 namespace SwagMediaS3;
 
+require __DIR__. '/vendor/autoload.php';
+
 use Shopware\Components\Plugin;
 use League\Flysystem\AdapterInterface;
 use Aws\S3\S3Client;
@@ -16,6 +18,9 @@ use League\Flysystem\AwsS3v3\AwsS3Adapter;
 
 class SwagMediaS3 extends Plugin
 {
+    /**
+     * {@inheritdoc}
+     */
     public static function getSubscribedEvents()
     {
         return [
@@ -52,7 +57,7 @@ class SwagMediaS3 extends Plugin
 
         if (!empty($config['key'])) {
             $clientConfig['credentials'] = [
-                'key'    => $config['key'],
+                'key' => $config['key'],
                 'secret' => $config['secret'],
             ];
         }
