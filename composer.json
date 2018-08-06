@@ -15,6 +15,7 @@
     	"exclude": ["/shopwarelabs-swag-media-s3-*.*", "/.git", "/.gitignore", "!/vendor"]
     },
     "require": {
+        "guzzlehttp/guzzle": "5.3.2",
         "league/flysystem-aws-s3-v3": "1.0.13"
     }
 }
