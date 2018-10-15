@@ -27,11 +27,12 @@ Update your ``config.php`` in your root directory and fill in your own values::
           's3' => [
               'type' => 's3',
               'mediaUrl' => 'YOUR_S3_OR_CLOUDFRONT_ENDPOINT',
-              'key' => 'YOUR_AWS_KEY',
-              'secret' => 'YOUR_AWS_SECRET',
               'region' => 'YOUR_S3_REGION',
               'bucket' => 'YOUR_S3_BUCKET_NAME',
-              'prefix' => ''
+              'credentials' => [
+                'key' => 'YOUR_AWS_KEY',
+                'secret' => 'YOUR_AWS_SECRET',
+              ]
           ]
       ]
   ]
